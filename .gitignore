@@ -1,0 +1,101 @@
+# ==========================================
+# 1. ARCHIVOS SENSIBLES Y CONFIGURACIÓN LOCAL
+# ==========================================
+# ¡NUNCA subir contraseñas de BD ni claves secretas JWT!
+.env
+.env.*
+**/application-local.properties
+**/application-local.yml
+**/local.properties
+
+# ==========================================
+# 2. JAVA, MAVEN Y SPRING BOOT (Backend)
+# ==========================================
+*.class
+*.log
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+hs_err_pid*
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# ==========================================
+# 3. ANDROID Y KOTLIN (App Móvil)
+# ==========================================
+*.apk
+*.aab
+*.ap_
+*.dex
+build/
+**/build/
+.gradle/
+**/.gradle/
+captures/
+.externalNativeBuild/
+.cxx/
+*.jks
+*.keystore
+
+# ==========================================
+# 4. FRONTEND WEB (Si usáis Node/React/Vite)
+# ==========================================
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+.npm
+.eslintcache
+
+# ==========================================
+# 5. IDEs (IntelliJ IDEA, Android Studio, VS Code, Eclipse)
+# ==========================================
+# IntelliJ / Android Studio
+.idea/
+**/.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Visual Studio Code
+.vscode/
+**/.vscode/
+
+# Eclipse
+.settings/
+.project
+.classpath
+.metadata/
+
+# ==========================================
+# 6. SISTEMA OPERATIVO (Windows / macOS / Linux)
+# ==========================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
