@@ -15,4 +15,20 @@ public class Familia {
     private String nombre;
 
     // Genera los getters y setters desde NetBeans
+
+    public Integer getIdFamilia() {
+        return idFamilia;
+    }
+
+    public void setIdFamilia(Integer idFamilia) {
+        this.idFamilia = idFamilia;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 }

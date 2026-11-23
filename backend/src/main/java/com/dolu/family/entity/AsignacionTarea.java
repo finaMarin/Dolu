@@ -63,7 +63,7 @@ public class AsignacionTarea {
         this.fechaCreada = fechaCreada;
     }
 
-    public Usuario getUsuari() {
+    public Usuario getUsuario() {
         return usuario;
     }
 

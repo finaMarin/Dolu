@@ -24,5 +24,45 @@ public class Recompensa {
     @JoinColumn(name = "id_familia", nullable = false)
     private Familia familia;
 
-    // Genera los getters y setters desde NetBeans
+    public Integer getIdRecompensa() {
+        return idRecompensa;
+    }
+
+    public void setIdRecompensa(Integer idRecompensa) {
+        this.idRecompensa = idRecompensa;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public Integer getNivelRequerido() {
+        return nivelRequerido;
+    }
+
+    public void setNivelRequerido(Integer nivelRequerido) {
+        this.nivelRequerido = nivelRequerido;
+    }
+
+    public Familia getFamilia() {
+        return familia;
+    }
+
+    public void setFamilia(Familia familia) {
+        this.familia = familia;
+    }
+
+    
 }
