@@ -25,7 +25,7 @@ public class AsignacionTarea {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_usuari", nullable = false)
-    private Usuari usuari;
+    private Usuario usuario;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_tasca", nullable = false)
@@ -63,12 +63,12 @@ public class AsignacionTarea {
         this.fechaCreada = fechaCreada;
     }
 
-    public Usuari getUsuari() {
-        return usuari;
+    public Usuario getUsuari() {
+        return usuario;
     }
 
-    public void setUsuari(Usuari usuari) {
-        this.usuari = usuari;
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
     }
 
     public Tarea getTarea() {

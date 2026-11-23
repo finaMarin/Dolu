@@ -1,12 +1,6 @@
-
 package com.dolu.family.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
-import jakarta.persistence.Id;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Column;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "Rol")
@@ -17,25 +11,8 @@ public class Rol {
     @Column(name = "id_rol")
     private Integer idRol;
 
-    @Column(name = "nombre", nullable = false, length = 100)
+    @Column(name = "nombre")
     private String nombre;
 
-    public Rol() {
-    }
-
-    public Integer getIdRol() {
-        return idRol;
-    }
-
-    public void setIdRol(Integer idRol) {
-        this.idRol = idRol;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
+    // Genera los getters y setters desde NetBeans
 }

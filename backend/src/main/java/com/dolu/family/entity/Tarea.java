@@ -1,4 +1,3 @@
-
 package com.dolu.family.entity;
 
 import jakarta.persistence.*;
@@ -11,15 +10,15 @@ public class Tarea {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_tasca")
-    private Integer idTasca;
+    private Integer idTarea;
 
-    @Column(name = "titulo", nullable = false, length = 100)
+    @Column(name = "titulo")
     private String titulo;
 
     @Column(name = "descripcion")
     private String descripcion;
 
-    @Column(name = "categoria", length = 100)
+    @Column(name = "categoria")
     private String categoria;
 
     @Column(name = "fecha_limite")
@@ -30,76 +29,11 @@ public class Tarea {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_creador", nullable = false)
-    private Usuari creador;
+    private Usuario creador;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_familia", nullable = false)
     private Familia familia;
 
-    public Integer getIdTasca() {
-        return idTasca;
-    }
-
-    public void setIdTasca(Integer idTasca) {
-        this.idTasca = idTasca;
-    }
-
-    public String getTitulo() {
-        return titulo;
-    }
-
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
-
-    public String getDescripcion() {
-        return descripcion;
-    }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
-
-    public String getCategoria() {
-        return categoria;
-    }
-
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
-    }
-
-    public LocalDateTime getFechaLimite() {
-        return fechaLimite;
-    }
-
-    public void setFechaLimite(LocalDateTime fechaLimite) {
-        this.fechaLimite = fechaLimite;
-    }
-
-    public Integer getXp() {
-        return xp;
-    }
-
-    public void setXp(Integer xp) {
-        this.xp = xp;
-    }
-
-    public Usuari getCreador() {
-        return creador;
-    }
-
-    public void setCreador(Usuari creador) {
-        this.creador = creador;
-    }
-
-    public Familia getFamilia() {
-        return familia;
-    }
-
-    public void setFamilia(Familia familia) {
-        this.familia = familia;
-    }
-
-    public Tarea() {
-    }
+    // Genera los getters y setters desde NetBeans
 }

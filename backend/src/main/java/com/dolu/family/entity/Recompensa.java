@@ -1,4 +1,3 @@
-
 package com.dolu.family.entity;
 
 import jakarta.persistence.*;
@@ -12,10 +11,10 @@ public class Recompensa {
     @Column(name = "id_recompensa")
     private Integer idRecompensa;
 
-    @Column(name = "nombre", nullable = false, length = 100)
+    @Column(name = "nombre")
     private String nombre;
 
-    @Column(name = "descripcion", length = 500)
+    @Column(name = "descripcion")
     private String descripcion;
 
     @Column(name = "nivel_requerido")
@@ -25,46 +24,5 @@ public class Recompensa {
     @JoinColumn(name = "id_familia", nullable = false)
     private Familia familia;
 
-    public Integer getIdRecompensa() {
-        return idRecompensa;
-    }
-
-    public void setIdRecompensa(Integer idRecompensa) {
-        this.idRecompensa = idRecompensa;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getDescripcion() {
-        return descripcion;
-    }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
-
-    public Integer getNivelRequerido() {
-        return nivelRequerido;
-    }
-
-    public void setNivelRequerido(Integer nivelRequerido) {
-        this.nivelRequerido = nivelRequerido;
-    }
-
-    public Familia getFamilia() {
-        return familia;
-    }
-
-    public void setFamilia(Familia familia) {
-        this.familia = familia;
-    }
-
-    public Recompensa() {
-    }
+    // Genera los getters y setters desde NetBeans
 }
